@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Img</title>
+</head>
+<body>
+
+<form th:action="@{/store/imgUpload}" th:object="${product}" method="post" enctype="multipart/form-data">
+  <div>
+      <label>Id</label>
+      <input type="text" name="id" />
+  </div>
+  <div>
+    <label>Upload</label>
+    <input type="file" name="img" />
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
